@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="MikeZiehfreund" content="Thinkful Bookmark Demo App">
+    <meta name="Thinkful bookmark project" content="establish a bookmarking website with javascript, html, css, jquery, e.g.">
+    <meta name="easy bookmarks" content="bookmark, book, favorites, list, items, star, save">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <title>MyBookMarker</title>
+
+    </head>
+
+    <body onload="fetchBookmark()" id='black'>
+
+  <main role = 'bodymain'>
+
+  <div class ="mainBody">
+
+  <h1 id= 'header'> MyBookMarker </h1>
+
+  <h2 id ='tagline'> Making BookMarking Easier Since 2018 </h2>
+
+  <p id = 'instructions'> Please enter your favorite URL & Title (description & rating are optional) </p>
+
+  <form id ="myForm"> 
+    <div class='form-group'> 
+   <label id='inputs'> URL </label>
+  <input class="form-control" id="siteUrl" type = 'text' placeholder= 'paste URL here' required> 
+  </div> 
+
+<div class='form-group'> 
+   <label id='inputs'> Title </label>
+  <input class="form-control" id="siteName" type = 'text' placeholder= 'Enter Site Title' required> 
+  </div> 
+
+
+  <div class='descriptionBox'> 
+      <label id='inputs'> Description </label>
+      <input id= 'description' type='text' placeholder="description">
+    </div> 
+
+<br>
+    <div class='dropdownMenu'> 
+        <select id='dropdownbox' aria-placeholder="Rating" placeholder='RATING'> 
+            <option value='1'> Rate 1 </option>
+            <option value ='2'> Rate 2 </option>
+            <option value = '3'> Rate 3 </option>
+            <option value= '4'> Rate 4 </option>
+            <option value ='5'> Rate 5! </option>
+        </select>
+      </div> 
+<br> 
+  <button class="btn btn-primary" type="submit"> Bookmark It :)</button>
+      
+</form>
+</div>
+
+<div class="row marketing">
+  <div class="col-lg-12">
+
+<div id="bookmarksResults">
+
+</div>
+
+  </div>
+</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      </main>
+    
+    <footer class="container">
+      <p>&copy; 2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="main.js"> </script>
+  </body>
+</html>
